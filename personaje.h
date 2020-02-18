@@ -56,6 +56,20 @@ public:
         return in;
     }
 
+    bool operator==( Personaje &p)
+    {
+        return nombre == p.nombre;
+    }
+
+    bool operator<(Personaje &p)
+    {
+        return nombre < p.nombre;
+    }
+    bool operator>(Personaje &p)
+    {
+        return nombre > p.nombre;
+    }
+
 private:
     string nombre;
     int salud;
